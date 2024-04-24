@@ -9,7 +9,10 @@ const port = process.env.PORT || 5000;
 // middleware
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://chipper-sunflower-fc2ba2.netlify.app",
+    ],
   })
 );
 app.use(express.json());
